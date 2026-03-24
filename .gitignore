@@ -1,0 +1,18 @@
+# dataset
+node_classification/datasets/
+
+# python cache
+__pycache__/
+*.pyc
+
+# logs
+*.log
+
+# generated files
+*.pt
+*.pth
+*.npz
+*.pkl
+
+# mac
+.DS_Store
