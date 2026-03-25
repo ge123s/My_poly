@@ -1,12 +1,14 @@
 # dataset
 node_classification/datasets/
+node_classification_large_graph/data
+node_classification_large_graph/datasets
+node_classification_large_graph/pretrained
 
 # python cache
 __pycache__/
 *.pyc
 
 # logs
-*.log
 
 # generated files
 *.pt

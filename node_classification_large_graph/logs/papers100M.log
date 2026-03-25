@@ -1,0 +1,12 @@
+/home/daci3090/data3090/Software/environment/anaconda3/envs/geyucheng_poly/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/daci3090/data3090/Software/environment/anaconda3/envs/geyucheng_poly/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+========================
+Namespace(seed=42, epochs=2000, lr=0.0002, weight_decay=0.0, attn_lr=5e-05, attn_wd=0.0, early_stopping=250, hidden=1024, dropout=0.5, dprate=0.8, n_head=1, d_ffn=512, q=1.0, multi=1.0, K=4, nlayer=1, base='mono', dataset='ogbn-papers100M', device_idx=8, net='PolyFormer', runs=1, metric='acc', test=1, batch_size=50000)
+----------------------------------------------------------------------------------------------------
+2026-03-25 14:01:32
+Traceback (most recent call last):
+  File "/home/daci3090/data3090/PersonalFile/geyucheng/My_poly/node_classification_large_graph/training_batch.py", line 141, in <module>
+    with open(data_path+"training_"+name+".pickle","rb") as fopen:
+FileNotFoundError: [Errno 2] No such file or directory: './data/training_ogbn-papers100M_split_0_K_4_mono.pickle'

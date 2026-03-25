@@ -1,3 +1,4 @@
+# pyg and torch removed
 alembic==1.10.4
 appdirs==1.4.4
 blessed==1.20.0

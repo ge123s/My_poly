@@ -182,7 +182,7 @@ class LINKXDataset(InMemoryDataset):
     splits = {
         'penn94': f'{github_url}/splits/fb100-Penn94-splits.npy',
         'genius': f'{github_url}/splits/genius-splits.npy',
-        'twitch-gamers': f'{github_url}/splits/twitch-gamers-splits.npy',
+        'twitch-gamer': f'{github_url}/splits/twitch-gamers-splits.npy',
         'snap-patents': f'{github_url}/splits/snap-patents-splits.npy',
         'pokec': f'{github_url}/splits/pokec-splits.npy', ### bug to be fixed
         'twitch-de': f'{github_url}/splits/twitch-e-DE-splits.npy',
@@ -250,7 +250,7 @@ class LINKXDataset(InMemoryDataset):
         edge_index = edge_index.to(torch.long)
         data = Data(x=x, edge_index=edge_index, y=y)
         if self.name in self.splits:
-            splits = np.load(paths['twitch-gamer-splits.npy'], allow_pickle=True)
+            splits = np.load(paths['twitch-gamers-splits.npy'], allow_pickle=True)
             sizes = (data.num_nodes, len(splits))
             data.train_mask = torch.zeros(sizes, dtype=torch.bool)
             data.val_mask = torch.zeros(sizes, dtype=torch.bool)
